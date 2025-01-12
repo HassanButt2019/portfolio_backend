@@ -14,6 +14,7 @@ from alembic.config import Config
 from alembic import command
 from alembic.config import Config
 from alembic import command
+import os
 app = FastAPI(title="Hassan Portfolio", version="1.0.0")
 
 @app.post("/apply-migrations")
