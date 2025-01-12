@@ -15,6 +15,9 @@ from alembic import command
 from alembic.config import Config
 from alembic import command
 from sqlalchemy import text
+from app.config import initialize_tables
+
+
 app = FastAPI(title="Hassan Portfolio", version="1.0.0")
 
 # @app.post("/apply-migrations")
@@ -45,20 +48,7 @@ async def startup_event():
     """Application startup event."""
     # Ensure the database connection is established first
     await database.connect()
-
-    # Create the projects table if it does not exist
-    async with database.connection() as conn:
-        query = text("""
-            CREATE TABLE IF NOT EXISTS projects (
-                id SERIAL PRIMARY KEY,
-                title VARCHAR(255) NOT NULL,
-                description TEXT NOT NULL,
-                technologies TEXT,
-                github_link VARCHAR(255) NOT NULL,
-                live_demo_link VARCHAR(255)
-            );
-        """)
-        await conn.execute(query)
+    await initialize_tables()
 
     logger.info("Application startup complete.")
 
