@@ -1,3 +1,4 @@
+from numbers import Integral
 from sqlalchemy import  Table, Column, String
 from sqlalchemy import MetaData
 from sqlalchemy import Table, Column, String, Text, DateTime, MetaData, func,Date
@@ -8,7 +9,7 @@ metadata = MetaData()
 about_me_table = Table(
     "about_me",  # Table name
     metadata,
-    Column("id", String, primary_key=True),  # Unique identifier
+    Column("id", Integral, primary_key=True, autoincrement=True),  # Auto-incrementing primary key
     Column("name", String),  # Name
     Column("bio", String),  # Biography
     Column("skills", String),  # Comma-separated skills
@@ -17,7 +18,7 @@ about_me_table = Table(
 contact_table = Table(
     "contact",
     metadata,
-    Column("id", String, primary_key=True),  # Unique message ID
+    Column("id", Integral, primary_key=True, autoincrement=True),  # Auto-incrementing primary key
     Column("name", String, nullable=False),  # Sender's name
     Column("email", String, nullable=False),  # Sender's email
     Column("message", Text, nullable=False),  # Message content
@@ -31,7 +32,7 @@ contact_table = Table(
 experience_table = Table(
     "experience",
     metadata,
-    Column("id", String, primary_key=True),  # Unique experience ID
+    Column("id", Integral, primary_key=True, autoincrement=True),  # Auto-incrementing primary key
     Column("title", String, nullable=False),  # Job title
     Column("company", String, nullable=False),  # Company name
     Column("start_date", Date, nullable=False),  # Start date
@@ -43,10 +44,10 @@ experience_table = Table(
 projects_table = Table(
     "projects",
     metadata,
-    Column("id", String, primary_key=True),  # Unique project ID
-    Column("title", String, nullable=False),
-    Column("description", String, nullable=False),
-    Column("technologies", String),  # Comma-separated list of technologies
-    Column("github_link", String, nullable=False),
-    Column("live_demo_link", String),  # Optional demo link
+    Column("id", Integral, primary_key=True, autoincrement=True),  # Auto-incrementing primary key
+    Column("title", String(255), nullable=False),
+    Column("description", Text, nullable=False),
+    Column("technologies", Text, nullable=True),
+    Column("github_link", String(255), nullable=False),
+    Column("live_demo_link", String(255), nullable=True),
 )
