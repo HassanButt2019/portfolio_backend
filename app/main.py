@@ -9,12 +9,21 @@ from fastapi.exceptions import RequestValidationError
 from app.routers import about
 from app.services.db import database
 from app.routers import experience
-
+from alembic.config import Config
+from alembic import command
 
 app = FastAPI(title="Hassan Portfolio", version="1.0.0")
+
+
+async def apply_migrations():
+    """Manually apply Alembic migrations."""
+    alembic_cfg = Config("alembic.ini")
+    command.upgrade(alembic_cfg, "head")
+    return {"message": "Migrations applied successfully"}
 @app.on_event("startup")
 async def startup_event():
     await database.connect()
+    await apply_migrations()
     logger.info("Application startup complete.")
 
 @app.middleware("http")
@@ -45,6 +54,9 @@ app.include_router(chatbot.router, prefix="/api", tags=["Chatbot"])
 app.include_router(about.router, prefix="/api", tags=["About Me"])
 app.include_router(experience.router, prefix="/api/experience", tags=["Experience"])
 app.include_router(contact.router, prefix="/api/contact", tags=["Contact"])
+
+
+
 
 @app.get("/")
 def read_root():
