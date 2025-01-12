@@ -1,3 +1,4 @@
+import asyncio
 import time
 from fastapi import FastAPI, Request
 from starlette.responses import Response
@@ -11,7 +12,8 @@ from app.services.db import database
 from app.routers import experience
 from alembic.config import Config
 from alembic import command
-
+from alembic.config import Config
+from alembic import command
 app = FastAPI(title="Hassan Portfolio", version="1.0.0")
 
 
@@ -25,11 +27,12 @@ async def apply_migrations():
     """Manually apply Alembic migrations."""
     alembic_cfg = Config("alembic.ini")
     try:
-        command.upgrade(alembic_cfg, "head")
-        return {"message": "Migrations applied successfully"}
+        # Run migrations
+        loop = asyncio.get_running_loop()
+        await loop.run_in_executor(None, command.upgrade, alembic_cfg, "head")
+        print("Migrations applied successfully.")
     except Exception as e:
-        return {"error": str(e)}
-
+        print(f"Failed to apply migrations: {e}")
     
 @app.on_event("startup")
 async def startup_event():
