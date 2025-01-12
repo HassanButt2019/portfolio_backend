@@ -16,7 +16,7 @@ from alembic.config import Config
 from alembic import command
 app = FastAPI(title="Hassan Portfolio", version="1.0.0")
 
-
+@app.post("/apply-migrations")
 async def apply_migrations():
     """Manually apply Alembic migrations."""
     alembic_cfg = Config("alembic.ini")
