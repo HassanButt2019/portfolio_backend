@@ -42,8 +42,11 @@ app = FastAPI(title="Hassan Portfolio", version="1.0.0")
     
 @app.on_event("startup")
 async def startup_event():
-    # apply_migrations()
+    """Application startup event."""
+    # Ensure the database connection is established first
+    await database.connect()
 
+    # Create the projects table if it does not exist
     async with database.connection() as conn:
         query = text("""
             CREATE TABLE IF NOT EXISTS projects (
@@ -56,7 +59,7 @@ async def startup_event():
             );
         """)
         await conn.execute(query)
-    await database.connect()
+
     logger.info("Application startup complete.")
 
 
