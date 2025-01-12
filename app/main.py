@@ -20,10 +20,17 @@ async def apply_migrations():
     alembic_cfg = Config("alembic.ini")
     command.upgrade(alembic_cfg, "head")
     return {"message": "Migrations applied successfully"}
+
+
+@app.post("/apply-migrations")
+async def apply_migrations():
+    """Manually apply Alembic migrations."""
+    alembic_cfg = Config("alembic.ini")
+    command.upgrade(alembic_cfg, "head")
+    return {"message": "Migrations applied successfully"}
 @app.on_event("startup")
 async def startup_event():
     await database.connect()
-    apply_migrations()
     logger.info("Application startup complete.")
 
 @app.middleware("http")
