@@ -42,3 +42,4 @@ urllib3==2.3.0
 uuid==1.30
 uvicorn==0.34.0
 yagmail==0.15.293
+psycopg2-binary
