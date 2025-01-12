@@ -20,16 +20,19 @@ async def apply_migrations():
     alembic_cfg = Config("alembic.ini")
     command.upgrade(alembic_cfg, "head")
     return {"message": "Migrations applied successfully"}
-
-
-@app.post("/apply-migrations")
 async def apply_migrations():
-    """Manually apply Alembic migrations."""
+    """Apply Alembic migrations programmatically."""
     alembic_cfg = Config("alembic.ini")
-    command.upgrade(alembic_cfg, "head")
-    return {"message": "Migrations applied successfully"}
+    try:
+        command.upgrade(alembic_cfg, "head")
+        print("Migrations applied successfully.")
+    except Exception as e:
+        print(f"Failed to apply migrations: {e}")
+
+    
 @app.on_event("startup")
 async def startup_event():
+    await apply_migrations()
     await database.connect()
     logger.info("Application startup complete.")
 
@@ -70,6 +73,22 @@ def read_root():
     return {"message": "Welcome to Hassan's AI Portfolio Backend!"}
 
 
+
+@app.get("/health")
+async def health_check():
+    """Health check endpoint."""
+    query = "SELECT 1 FROM projects LIMIT 1;"
+    try:
+        result = await database.fetch_one(query)
+        return {"status": "healthy", "projects_table": "exists"}
+    except Exception:
+        return {"status": "unhealthy", "projects_table": "does not exist"}
+
+
 @app.on_event("shutdown")
 async def shutdown_event():
     await database.disconnect()
+
+
+
+
