@@ -32,7 +32,7 @@ async def apply_migrations():
     
 @app.on_event("startup")
 async def startup_event():
-    await apply_migrations()
+    apply_migrations()
     await database.connect()
     logger.info("Application startup complete.")
 
