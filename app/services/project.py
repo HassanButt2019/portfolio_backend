@@ -44,7 +44,6 @@ class ProjectsDB:
         """Add a new project."""
         project_id = str(uuid.uuid4())  # Generate a unique ID
         query = projects_table.insert().values(
-            id=project_id,
             title=project.title,
             description=project.description,
             technologies=",".join(project.technologies),
