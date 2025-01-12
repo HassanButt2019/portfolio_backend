@@ -1,5 +1,5 @@
 from app.services.db import database
-from app.schemas.about import about_me_table
+from app.schemas.database_schema import about_me_table
 from app.models.about import AboutMe
 from sqlalchemy.dialects.postgresql import insert
 

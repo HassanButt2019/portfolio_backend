@@ -1,6 +1,6 @@
 from app.models.contact import Contact
 from app.services.db import database
-from app.schemas.contact import contact_table
+from app.schemas.database_schema import contact_table
 import uuid
 from datetime import datetime
 from app.utils.email import send_email

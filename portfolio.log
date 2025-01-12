@@ -1,0 +1,397 @@
+2025-01-11 20:40:03,046 - portfolio_logger - INFO - Request: method=GET path=/ client=127.0.0.1
+2025-01-11 20:40:03,049 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/ process_time=0.00s
+2025-01-11 20:40:04,105 - portfolio_logger - INFO - Request: method=GET path=/favicon.ico client=127.0.0.1
+2025-01-11 20:40:04,123 - portfolio_logger - INFO - Response: status_code=404 method=GET path=/favicon.ico process_time=0.02s
+2025-01-11 20:40:31,737 - portfolio_logger - INFO - Request: method=GET path=/a client=127.0.0.1
+2025-01-11 20:40:31,738 - portfolio_logger - INFO - Response: status_code=404 method=GET path=/a process_time=0.00s
+2025-01-11 20:41:02,454 - portfolio_logger - INFO - Request: method=GET path=/ client=127.0.0.1
+2025-01-11 20:41:02,456 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/ process_time=0.00s
+2025-01-11 20:50:44,740 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:50:49,710 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:51:20,153 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:51:41,122 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:51:55,642 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:52:00,165 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:52:45,514 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:52:49,689 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:53:00,375 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:53:21,632 - portfolio_logger - INFO - Request: method=GET path=/ client=127.0.0.1
+2025-01-11 20:53:21,637 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/ process_time=0.01s
+2025-01-11 20:53:33,521 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-11 20:53:33,525 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-11 20:53:33,870 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-11 20:53:33,882 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.01s
+2025-01-11 20:53:37,896 - portfolio_logger - INFO - Request: method=GET path=/api/projects client=127.0.0.1
+2025-01-11 20:53:37,898 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects process_time=0.00s
+2025-01-11 20:54:03,148 - portfolio_logger - INFO - Request: method=POST path=/api/projects client=127.0.0.1
+2025-01-11 20:54:03,157 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/projects process_time=0.01s
+2025-01-11 20:55:23,852 - portfolio_logger - INFO - Request: method=POST path=/api/projects client=127.0.0.1
+2025-01-11 20:55:23,857 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/projects process_time=0.01s
+2025-01-11 20:55:51,984 - portfolio_logger - INFO - Request: method=POST path=/api/projects client=127.0.0.1
+2025-01-11 20:55:51,988 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/projects process_time=0.00s
+2025-01-11 20:56:03,515 - portfolio_logger - INFO - Request: method=POST path=/api/projects client=127.0.0.1
+2025-01-11 20:56:03,521 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/projects process_time=0.01s
+2025-01-11 20:56:12,439 - portfolio_logger - INFO - Request: method=GET path=/api/projects client=127.0.0.1
+2025-01-11 20:56:12,440 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects process_time=0.00s
+2025-01-11 20:56:46,046 - portfolio_logger - INFO - Request: method=POST path=/api/projects client=127.0.0.1
+2025-01-11 20:56:46,050 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/projects process_time=0.00s
+2025-01-11 20:57:45,977 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:57:49,991 - portfolio_logger - INFO - Request: method=POST path=/api/projects client=127.0.0.1
+2025-01-11 20:57:49,995 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/projects process_time=0.00s
+2025-01-11 20:58:34,713 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:58:37,055 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:58:45,576 - portfolio_logger - INFO - Request: method=POST path=/api/projects client=127.0.0.1
+2025-01-11 20:59:18,834 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 20:59:23,880 - portfolio_logger - INFO - Request: method=POST path=/api/projects client=127.0.0.1
+2025-01-11 20:59:23,884 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/projects process_time=0.00s
+2025-01-11 20:59:30,272 - portfolio_logger - INFO - Request: method=POST path=/api/projects client=127.0.0.1
+2025-01-11 20:59:30,288 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/projects process_time=0.02s
+2025-01-11 21:02:51,404 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-11 21:02:51,415 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.01s
+2025-01-11 21:02:52,130 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-11 21:02:52,141 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.01s
+2025-01-11 21:03:08,309 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 21:03:09,528 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 21:03:21,784 - portfolio_logger - INFO - Request: method=POST path=/api/chatbot client=127.0.0.1
+2025-01-11 21:03:21,788 - portfolio_logger - INFO - Response: status_code=500 method=POST path=/api/chatbot process_time=0.01s
+2025-01-11 21:04:58,996 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 21:05:15,826 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 21:05:33,020 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 21:05:39,268 - portfolio_logger - INFO - Request: method=POST path=/api/chatbot client=127.0.0.1
+2025-01-11 21:05:39,271 - portfolio_logger - INFO - Response: status_code=500 method=POST path=/api/chatbot process_time=0.00s
+2025-01-11 21:05:42,977 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-11 21:05:42,978 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-11 21:05:43,647 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-11 21:05:43,653 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.01s
+2025-01-11 21:05:57,132 - portfolio_logger - INFO - Request: method=POST path=/api/chatbot client=127.0.0.1
+2025-01-11 21:05:57,135 - portfolio_logger - INFO - Response: status_code=500 method=POST path=/api/chatbot process_time=0.00s
+2025-01-11 21:14:29,173 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 21:14:30,200 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 21:14:33,325 - portfolio_logger - INFO - Request: method=POST path=/api/chatbot client=127.0.0.1
+2025-01-11 21:14:34,091 - portfolio_logger - INFO - Response: status_code=500 method=POST path=/api/chatbot process_time=0.77s
+2025-01-11 21:14:57,594 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 21:15:01,368 - portfolio_logger - INFO - Request: method=POST path=/api/chatbot client=127.0.0.1
+2025-01-11 21:15:03,182 - portfolio_logger - INFO - Response: status_code=500 method=POST path=/api/chatbot process_time=1.81s
+2025-01-11 21:31:49,168 - portfolio_logger - INFO - Request: method=POST path=/api/chatbot client=127.0.0.1
+2025-01-11 21:31:51,113 - portfolio_logger - INFO - Response: status_code=500 method=POST path=/api/chatbot process_time=1.95s
+2025-01-11 21:38:13,167 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 21:38:54,588 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 21:39:20,684 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:22:42,135 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:22:48,345 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-11 23:22:48,347 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-11 23:22:49,425 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-11 23:22:49,634 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.23s
+2025-01-11 23:22:56,150 - portfolio_logger - INFO - Request: method=GET path=/api/ client=127.0.0.1
+2025-01-11 23:22:56,192 - portfolio_logger - INFO - Response: status_code=404 method=GET path=/api/ process_time=0.04s
+2025-01-11 23:23:30,991 - portfolio_logger - INFO - Request: method=PUT path=/api/ client=127.0.0.1
+2025-01-11 23:25:14,918 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:25:20,054 - portfolio_logger - INFO - Request: method=PUT path=/api/ client=127.0.0.1
+2025-01-11 23:25:21,166 - portfolio_logger - INFO - Request: method=PUT path=/api/ client=127.0.0.1
+2025-01-11 23:25:38,089 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:25:40,452 - portfolio_logger - INFO - Request: method=PUT path=/api/ client=127.0.0.1
+2025-01-11 23:25:40,489 - portfolio_logger - INFO - Response: status_code=200 method=PUT path=/api/ process_time=0.04s
+2025-01-11 23:25:45,850 - portfolio_logger - INFO - Request: method=GET path=/api/ client=127.0.0.1
+2025-01-11 23:25:45,859 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/ process_time=0.01s
+2025-01-11 23:27:46,659 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:28:00,223 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:28:06,957 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:28:29,605 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:32:14,837 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:32:22,660 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:32:26,641 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:32:28,057 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:35:33,419 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:36:03,196 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:36:37,854 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-11 23:36:37,856 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-11 23:36:38,867 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-11 23:36:38,955 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.09s
+2025-01-11 23:36:44,014 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=127.0.0.1
+2025-01-11 23:37:34,170 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:39:56,090 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:39:56,658 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-11 23:39:56,659 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-11 23:39:57,563 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-11 23:39:57,585 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.02s
+2025-01-11 23:40:15,068 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=127.0.0.1
+2025-01-11 23:40:15,098 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects/ process_time=0.03s
+2025-01-11 23:40:22,412 - portfolio_logger - INFO - Request: method=POST path=/api/projects/ client=127.0.0.1
+2025-01-11 23:41:58,638 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:42:21,129 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:42:28,803 - portfolio_logger - INFO - Request: method=POST path=/api/projects/ client=127.0.0.1
+2025-01-11 23:43:45,432 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:43:53,106 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:44:27,126 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:44:31,040 - portfolio_logger - INFO - Request: method=POST path=/api/projects/ client=127.0.0.1
+2025-01-11 23:44:31,055 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/projects/ process_time=0.01s
+2025-01-11 23:44:42,507 - portfolio_logger - INFO - Request: method=POST path=/api/projects/ client=127.0.0.1
+2025-01-11 23:44:42,513 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/projects/ process_time=0.01s
+2025-01-11 23:44:52,258 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-11 23:44:52,259 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-11 23:44:53,071 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-11 23:44:53,093 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.02s
+2025-01-11 23:44:58,346 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=127.0.0.1
+2025-01-11 23:44:58,353 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects/ process_time=0.01s
+2025-01-11 23:45:09,777 - portfolio_logger - INFO - Request: method=GET path=/api/projects/42868a7b-227f-4aa0-a1b9-938e7a5a2088 client=127.0.0.1
+2025-01-11 23:45:09,802 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects/42868a7b-227f-4aa0-a1b9-938e7a5a2088 process_time=0.03s
+2025-01-11 23:45:24,768 - portfolio_logger - INFO - Request: method=DELETE path=/api/projects/42868a7b-227f-4aa0-a1b9-938e7a5a2088 client=127.0.0.1
+2025-01-11 23:45:24,779 - portfolio_logger - INFO - Response: status_code=200 method=DELETE path=/api/projects/42868a7b-227f-4aa0-a1b9-938e7a5a2088 process_time=0.01s
+2025-01-11 23:58:45,297 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:58:56,089 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:59:04,737 - portfolio_logger - INFO - Application startup complete.
+2025-01-11 23:59:09,098 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:01:18,391 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:01:30,346 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:01:36,605 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:01:40,905 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:01:45,161 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:01:47,323 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:02:07,601 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:02:15,446 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:02:18,169 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:02:35,238 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:03:41,238 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:04:08,351 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:04:35,076 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:05:12,665 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-12 00:05:12,667 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-12 00:05:13,897 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-12 00:05:13,923 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.03s
+2025-01-12 00:05:20,095 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-12 00:06:16,633 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:06:27,461 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:06:51,409 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:06:54,076 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:06:56,654 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:07:03,794 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:07:07,635 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:07:09,793 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:07:14,942 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:07:19,193 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:07:20,668 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:07:22,106 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:07:44,658 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:07:53,023 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:08:05,148 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:08:06,408 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:08:08,138 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:08:09,690 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:08:11,418 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:08:18,428 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-12 00:08:29,571 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:08:32,330 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-12 00:08:51,991 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:08:55,409 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:08:57,986 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:09:16,147 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:09:19,937 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:09:26,360 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:09:29,776 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:09:35,070 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:09:37,201 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:09:43,100 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:09:48,396 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:09:58,035 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:10:01,098 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:10:05,795 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:10:10,576 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:10:15,156 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:11:19,346 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:14:19,379 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:14:36,230 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:14:38,631 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:14:49,957 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:14:53,662 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:14:55,824 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:16:19,088 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:16:21,459 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:16:24,935 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:20:28,938 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:20:50,871 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-12 00:20:50,875 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-12 00:20:51,900 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-12 00:20:51,935 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.04s
+2025-01-12 00:20:56,142 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-12 00:21:02,529 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=127.0.0.1
+2025-01-12 00:21:02,543 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects/ process_time=0.01s
+2025-01-12 00:31:29,504 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:31:31,195 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-12 00:31:31,196 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-12 00:31:32,139 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-12 00:31:32,168 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.03s
+2025-01-12 00:31:35,191 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=127.0.0.1
+2025-01-12 00:31:35,206 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects/ process_time=0.02s
+2025-01-12 00:31:41,116 - portfolio_logger - INFO - Request: method=GET path=/api/ client=127.0.0.1
+2025-01-12 00:31:41,119 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/ process_time=0.00s
+2025-01-12 00:31:46,867 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-12 00:34:16,154 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:34:19,401 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-12 00:34:37,303 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:34:39,598 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-12 00:36:51,615 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:36:56,106 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:38:41,913 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:38:43,744 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-12 00:38:43,882 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/experience/ process_time=0.14s
+2025-01-12 00:40:21,470 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-12 00:40:21,477 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.01s
+2025-01-12 00:40:28,060 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-12 00:40:38,867 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-12 00:40:38,906 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.04s
+2025-01-12 00:41:11,976 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:41:16,942 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-12 00:41:28,997 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:41:33,162 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-12 00:41:33,167 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.00s
+2025-01-12 00:42:33,888 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-12 00:42:33,895 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.01s
+2025-01-12 00:42:43,897 - portfolio_logger - INFO - Request: method=POST path=/api/projects/ client=127.0.0.1
+2025-01-12 00:42:43,909 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/projects/ process_time=0.01s
+2025-01-12 00:43:22,089 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-12 00:43:22,095 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.01s
+2025-01-12 00:44:17,671 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:45:09,694 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:45:13,840 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:45:21,556 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:45:36,874 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-12 00:45:36,882 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.01s
+2025-01-12 00:46:08,505 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:46:09,692 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-12 00:48:40,640 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:48:45,924 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-12 00:48:45,959 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/experience/ process_time=0.04s
+2025-01-12 00:48:49,975 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-12 00:48:49,980 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/experience/ process_time=0.01s
+2025-01-12 00:48:59,068 - portfolio_logger - INFO - Request: method=GET path=/api/experience/277be457-a59a-4e7c-b9b5-f90f254589ff client=127.0.0.1
+2025-01-12 00:48:59,072 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/experience/277be457-a59a-4e7c-b9b5-f90f254589ff process_time=0.00s
+2025-01-12 00:49:06,133 - portfolio_logger - INFO - Request: method=DELETE path=/api/experience/277be457-a59a-4e7c-b9b5-f90f254589ff client=127.0.0.1
+2025-01-12 00:49:06,140 - portfolio_logger - INFO - Response: status_code=200 method=DELETE path=/api/experience/277be457-a59a-4e7c-b9b5-f90f254589ff process_time=0.01s
+2025-01-12 00:49:12,658 - portfolio_logger - INFO - Request: method=GET path=/ client=127.0.0.1
+2025-01-12 00:49:12,660 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/ process_time=0.00s
+2025-01-12 00:52:57,578 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:53:06,875 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:53:24,046 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:53:50,766 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:54:08,639 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:54:46,911 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:57:19,550 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:57:34,828 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-12 00:57:34,830 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-12 00:57:35,922 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-12 00:57:35,948 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.03s
+2025-01-12 00:57:41,235 - portfolio_logger - INFO - Request: method=GET path=/api/contact/ client=127.0.0.1
+2025-01-12 00:57:57,822 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:58:02,078 - portfolio_logger - INFO - Request: method=GET path=/api/contact/ client=127.0.0.1
+2025-01-12 00:58:44,317 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:58:46,031 - portfolio_logger - INFO - Request: method=GET path=/api/contact/ client=127.0.0.1
+2025-01-12 00:59:38,648 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:59:42,497 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:59:44,268 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:59:49,547 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 00:59:52,021 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:00:09,917 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:00:10,952 - portfolio_logger - INFO - Request: method=GET path=/api/contact/ client=127.0.0.1
+2025-01-12 01:00:10,959 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/contact/ process_time=0.01s
+2025-01-12 01:00:44,855 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:02:22,913 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:02:24,326 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:03:18,296 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:03:21,135 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:04:05,305 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:04:18,405 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:04:24,889 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:05:23,472 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:05:37,823 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:05:45,152 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:05:50,189 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:06:06,087 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:06:20,622 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:06:20,647 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/contact/ process_time=0.03s
+2025-01-12 01:06:30,974 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:06:41,575 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:06:45,043 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:06:49,833 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:06:50,667 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:06:50,701 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/contact/ process_time=0.03s
+2025-01-12 01:16:13,052 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:16:20,593 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:16:31,852 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:16:36,187 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:16:42,980 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:16:44,289 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:16:44,829 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/contact/ process_time=0.54s
+2025-01-12 01:22:43,640 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:22:44,226 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/contact/ process_time=0.59s
+2025-01-12 01:28:23,559 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:28:24,112 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/contact/ process_time=0.55s
+2025-01-12 01:36:38,153 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:36:38,711 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/contact/ process_time=0.56s
+2025-01-12 01:37:11,716 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:37:16,284 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:37:17,847 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/contact/ process_time=1.56s
+2025-01-12 01:38:46,811 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:39:19,947 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:39:28,424 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:39:30,965 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:39:32,170 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/contact/ process_time=1.21s
+2025-01-12 01:39:49,702 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:39:55,686 - portfolio_logger - INFO - Request: method=POST path=/api/contact/ client=127.0.0.1
+2025-01-12 01:39:57,137 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/contact/ process_time=1.45s
+2025-01-12 01:48:05,914 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 01:48:06,282 - portfolio_logger - INFO - Request: method=GET path=/docs client=172.24.0.1
+2025-01-12 01:48:06,283 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-12 01:48:07,274 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=172.24.0.1
+2025-01-12 01:48:07,313 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.04s
+2025-01-12 01:48:19,976 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=172.24.0.1
+2025-01-12 02:02:11,195 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 02:02:14,953 - portfolio_logger - INFO - Request: method=GET path=/docs client=172.26.0.1
+2025-01-12 02:02:14,954 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-12 02:02:16,055 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=172.26.0.1
+2025-01-12 02:02:16,089 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.03s
+2025-01-12 02:02:22,316 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=172.26.0.1
+2025-01-12 02:17:54,568 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 02:19:02,512 - portfolio_logger - INFO - Request: method=GET path=/docs client=172.27.0.1
+2025-01-12 02:19:02,514 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-12 02:19:03,031 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=172.27.0.1
+2025-01-12 02:19:03,054 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.02s
+2025-01-12 02:19:09,282 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=172.27.0.1
+2025-01-12 03:26:30,454 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:29:22,534 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:31:23,625 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:31:51,953 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:33:16,594 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:33:20,482 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:33:32,857 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:33:34,234 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:33:41,625 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:33:45,765 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:34:30,704 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:34:33,657 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:34:36,688 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:34:41,528 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:46:44,654 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:46:58,946 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:47:02,189 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:47:31,265 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-12 03:47:31,267 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-12 03:47:31,955 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-12 03:47:31,985 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.03s
+2025-01-12 03:47:35,396 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=127.0.0.1
+2025-01-12 03:47:35,443 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects/ process_time=0.05s
+2025-01-12 03:49:53,760 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:49:58,367 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:50:10,981 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:50:19,825 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:51:55,215 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:51:58,016 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:52:05,441 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:52:10,533 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:52:58,880 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 03:53:30,075 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 02:56:21,049 - portfolio_logger - INFO - Application startup complete.
+2025-01-12 02:56:25,373 - portfolio_logger - INFO - Request: method=GET path=/docs client=172.29.0.1
+2025-01-12 02:56:25,376 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-12 02:56:26,372 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=172.29.0.1
+2025-01-12 02:56:26,396 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.02s
+2025-01-12 02:56:30,597 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=172.29.0.1

@@ -1,7 +1,7 @@
 from sqlalchemy.dialects.postgresql import insert
 from app.models.projects import Project
 from app.services.db import database
-from app.schemas.projects import projects_table
+from app.schemas.database_schema import projects_table
 import uuid
 
 

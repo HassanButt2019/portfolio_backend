@@ -1,7 +1,7 @@
 from sqlalchemy.dialects.postgresql import insert
 from app.models.experience import Experience
 from app.services.db import database
-from app.schemas.experience import experience_table
+from app.schemas.database_schema import experience_table
 import uuid
 
 
