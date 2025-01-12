@@ -19,21 +19,30 @@ app = FastAPI(title="Hassan Portfolio", version="1.0.0")
 
 @app.post("/apply-migrations")
 async def apply_migrations():
-    """Manually apply Alembic migrations."""
+    """
+    Manually generate and apply Alembic migrations.
+    """
     alembic_cfg = Config("alembic.ini")
+    migrations_path = "migrations/versions/"
+    
     try:
-        # Step 1: Generate migration revision
-        migrations_path = "migrations/versions/"
-        if not os.listdir(migrations_path):  # Check if the directory is empty
+        # Step 1: Generate migration revision if none exists
+        if not os.listdir(migrations_path):  # Check if migration files exist
             print("Generating new migration revision...")
-            command.revision(alembic_cfg, message="Create all tables", autogenerate=True)
+            loop = asyncio.get_running_loop()
+            await loop.run_in_executor(
+                None, lambda: command.revision(alembic_cfg, message="Create all tables", autogenerate=True)
+            )
             print("Migration revision created successfully.")
         else:
             print("Migration revisions already exist.")
 
         # Step 2: Apply migrations
         print("Applying migrations...")
-        command.upgrade(alembic_cfg, "head")
+        loop = asyncio.get_running_loop()
+        await loop.run_in_executor(
+            None, lambda: command.upgrade(alembic_cfg, "head")
+        )
         print("Migrations applied successfully.")
         return {"message": "Migrations generated and applied successfully."}
     except Exception as e:
