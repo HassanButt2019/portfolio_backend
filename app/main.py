@@ -14,38 +14,60 @@ from alembic.config import Config
 from alembic import command
 from alembic.config import Config
 from alembic import command
-import os
+from sqlalchemy import text
 app = FastAPI(title="Hassan Portfolio", version="1.0.0")
 
-@app.post("/apply-migrations")
-async def apply_migrations():
-    """Manually apply Alembic migrations."""
-    alembic_cfg = Config("alembic.ini")
-    try:
-        # Step 1: Generate migration revision
-        migrations_path = "migrations/versions/"
-        if not os.listdir(migrations_path):  # Check if the directory is empty
-            print("Generating new migration revision...")
-            command.revision(alembic_cfg, message="Create all tables", autogenerate=True)
-            print("Migration revision created successfully.")
-        else:
-            print("Migration revisions already exist.")
+# @app.post("/apply-migrations")
+# async def apply_migrations():
+#     """Manually apply Alembic migrations."""
+#     alembic_cfg = Config("alembic.ini")
+#     try:
+#         # Step 1: Generate migration revision
+#         migrations_path = "migrations/versions/"
+#         if not os.listdir(migrations_path):  # Check if the directory is empty
+#             print("Generating new migration revision...")
+#             command.revision(alembic_cfg, message="Create all tables", autogenerate=True)
+#             print("Migration revision created successfully.")
+#         else:
+#             print("Migration revisions already exist.")
 
-        # Step 2: Apply migrations
-        print("Applying migrations...")
-        command.upgrade(alembic_cfg, "head")
-        print("Migrations applied successfully.")
-        return {"message": "Migrations generated and applied successfully."}
-    except Exception as e:
-        print(f"Migration error: {e}")
-        return {"error": str(e)}
+#         # Step 2: Apply migrations
+#         print("Applying migrations...")
+#         command.upgrade(alembic_cfg, "head")
+#         print("Migrations applied successfully.")
+#         return {"message": "Migrations generated and applied successfully."}
+#     except Exception as e:
+#         print(f"Migration error: {e}")
+#         return {"error": str(e)}
     
 @app.on_event("startup")
 async def startup_event():
     # apply_migrations()
+
+    async with database.connection() as conn:
+        query = text("""
+            CREATE TABLE IF NOT EXISTS projects (
+                id SERIAL PRIMARY KEY,
+                title VARCHAR(255) NOT NULL,
+                description TEXT NOT NULL,
+                technologies TEXT,
+                github_link VARCHAR(255) NOT NULL,
+                live_demo_link VARCHAR(255)
+            );
+        """)
+        await conn.execute(query)
     await database.connect()
     logger.info("Application startup complete.")
 
+
+@app.get("/health/projects")
+async def check_projects_table():
+    query = "SELECT 1 FROM projects LIMIT 1;"
+    try:
+        result = await database.fetch_one(query)
+        return {"status": "healthy", "result": result}
+    except Exception as e:
+        return {"status": "unhealthy", "error": str(e)}
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     # Log request details
