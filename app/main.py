@@ -30,9 +30,9 @@ async def apply_migrations():
         # Run migrations
         loop = asyncio.get_running_loop()
         await loop.run_in_executor(None, command.upgrade, alembic_cfg, "head")
-        print("Migrations applied successfully.")
+        return {"message": "Migrations applied successfully"}
     except Exception as e:
-        print(f"Failed to apply migrations: {e}")
+        return {"error": str(e)}
     
 @app.on_event("startup")
 async def startup_event():
