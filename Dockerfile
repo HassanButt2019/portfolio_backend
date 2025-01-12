@@ -22,10 +22,12 @@ EXPOSE 8000
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
+COPY wait-for-it.sh /app/wait-for-it.sh
+RUN chmod +x /app/wait-for-it.sh
 
 # Add health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
   CMD curl -f http://localhost:8000/health || exit 1
 
 # Wait for database to be ready and run migrations before starting the app
-CMD ["sh", "-c", "./wait-for-it.sh portfolio-db:5432 -- alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"]
+CMD ["sh", "-c", "/app/wait-for-it.sh portfolio-db:5432 -- alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"]
