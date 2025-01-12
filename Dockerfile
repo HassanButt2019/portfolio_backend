@@ -22,12 +22,12 @@ EXPOSE 8000
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
-COPY wait-for-it.sh /app/wait-for-it.sh
-RUN chmod +x /app/wait-for-it.sh
+COPY init.sql /app/init.sql
+
 
 # Add health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
   CMD curl -f http://localhost:8000/health || exit 1
 
 # Wait for database to be ready and run migrations before starting the app
-CMD ["sh", "-c", "if [ -z \"$(ls -A migrations/versions/*.py 2>/dev/null)\" ]; then alembic revision --autogenerate -m 'Create all tables'; fi && alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"]
+CMD ["sh", "-c", "alembic upgrade head && python run_sql_script.py && uvicorn app.main:app --host 0.0.0.0 --port 8000"]
