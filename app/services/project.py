@@ -13,7 +13,7 @@ class ProjectsDB:
         rows = await database.fetch_all(query)
         return [
             Project(
-                id=str(row["id"]),
+                id=row["id"],  # No need to cast to string since id is integer
                 title=row["title"],
                 description=row["description"],
                 technologies=row["technologies"].split(","),
@@ -30,7 +30,7 @@ class ProjectsDB:
         row = await database.fetch_one(query)
         if row:
             return Project(
-                id=str(row["id"]),
+                id=row["id"],  # No need to cast to string since id is integer
                 title=row["title"],
                 description=row["description"],
                 technologies=row["technologies"].split(","),

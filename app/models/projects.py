@@ -2,7 +2,7 @@ from pydantic import BaseModel ,HttpUrl
 from typing import List, Optional
 
 class Project(BaseModel):
-    id: Optional[str] = None  # Auto-generated ID (optional for POST)
+    id: Optional[int] = None  # Auto-generated ID (optional for POST)
     title: str
     description: str
     technologies: List[str]
