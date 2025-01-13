@@ -13,7 +13,7 @@ class ProjectsDB:
         rows = await database.fetch_all(query)
         return [
             Project(
-                id=row["id"],
+                id=str(row["id"]),
                 title=row["title"],
                 description=row["description"],
                 technologies=row["technologies"].split(","),
