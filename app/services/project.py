@@ -30,7 +30,7 @@ class ProjectsDB:
         row = await database.fetch_one(query)
         if row:
             return Project(
-                id=row["id"],
+                id=str(row["id"]),
                 title=row["title"],
                 description=row["description"],
                 technologies=row["technologies"].split(","),
@@ -44,7 +44,6 @@ class ProjectsDB:
         """Add a new project."""
         project_id = str(uuid.uuid4())  # Generate a unique ID
         query = projects_table.insert().values(
-            id=project_id,
             title=project.title,
             description=project.description,
             technologies=",".join(project.technologies),
@@ -54,7 +53,6 @@ class ProjectsDB:
         await database.execute(query)
         # Create a new Project object, overriding the id field
         return Project(
-            id=project_id,
             title=project.title,
             description=project.description,
             technologies=project.technologies,
