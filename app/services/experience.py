@@ -25,7 +25,7 @@ class ExperienceDB:
         ]
 
     @staticmethod
-    async def get_experience_by_id(exp_id: str) -> Experience:
+    async def get_experience_by_id(exp_id: int) -> Experience:
         """Fetch a specific experience by ID."""
         query = experience_table.select().where(experience_table.c.id == exp_id)
         row = await database.fetch_one(query)

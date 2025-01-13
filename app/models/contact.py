@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 class Contact(BaseModel):
-    id: Optional[str] = None  # Unique identifier (auto-generated)
+    id: Optional[int] = None  # Auto-generated ID (optional for POST)
     name: str  # Sender's name
     email: EmailStr  # Sender's email
     message: str  # Message content

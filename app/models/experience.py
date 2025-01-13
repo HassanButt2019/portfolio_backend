@@ -3,7 +3,7 @@ from typing import List, Optional
 from datetime import date
 
 class Experience(BaseModel):
-    id: Optional[str] = None   # Unique identifier (auto-generated)
+    id: Optional[int] = None  # Auto-generated ID (optional for POST)
     title: str  # Job title (e.g., Backend Developer)
     company: str  # Company name
     start_date: date  # Start date of employment
