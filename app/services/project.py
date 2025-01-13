@@ -30,7 +30,7 @@ class ProjectsDB:
         row = await database.fetch_one(query)
         if row:
             return Project(
-                id=str(row["id"]),
+                id=row["id"],
                 title=row["title"],
                 description=row["description"],
                 technologies=row["technologies"].split(","),
