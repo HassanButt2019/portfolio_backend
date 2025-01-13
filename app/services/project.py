@@ -24,7 +24,7 @@ class ProjectsDB:
         ]
 
     @staticmethod
-    async def get_project_by_id(project_id: str) -> Project:
+    async def get_project_by_id(project_id: int) -> Project:
         """Fetch a project by ID."""
         query = projects_table.select().where(projects_table.c.id == project_id)
         row = await database.fetch_one(query)
