@@ -1,0 +1,88 @@
+//// projects 
+
+{
+  "id": 1,
+  "title": "Portfolio Website",
+  "description": "A fully responsive and dynamic portfolio website showcasing my projects, skills, and professional experience.",
+  "short_description": "Dynamic portfolio website for showcasing projects.",
+  "category": {
+    "type": "Web Development",
+    "tags": ["Backend", "Frontend"]
+  },
+  "status": {
+    "current_status": "In Progress",
+    "completion_percentage": 80
+  },
+  "priority": {
+    "level": "High",
+    "reason": "Professional Branding"
+  },
+  "start_date": "2025-01-16T00:42:29.332Z",
+  "end_date": null,
+  "technologies": [
+    "React",
+    "FastAPI",
+    "Docker",
+    "PostgreSQL",
+    "AWS"
+  ],
+  "architecture": "Microservices",
+  "deployment": {
+    "platform": "AWS",
+    "method": "CI/CD using GitHub Actions"
+  },
+  "repository": {
+    "github": "https://github.com/hassan-rauf-butt/portfolio",
+    "branch": "main"
+  },
+  "team": [
+    "Hassan Rauf Butt"
+  ],
+  "collaborators": [],
+  "progress": 80,
+  "metrics": {
+    "page_load_time": "1.2s",
+    "uptime": "99.9%",
+    "user_visits": 1500
+  },
+  "milestones": [
+    {
+      "title": "Initial Setup",
+      "description": "Configured the project repository, CI/CD pipelines, and base framework.",
+      "completed": true
+    },
+    {
+      "title": "Backend Development",
+      "description": "Implemented backend APIs for project and skill management.",
+      "completed": true
+    },
+    {
+      "title": "Frontend Integration",
+      "description": "Integrated backend APIs with a responsive React frontend.",
+      "completed": false
+    }
+  ],
+  "tasks": [
+    {
+      "task_name": "Finalize API Endpoints",
+      "status": "Completed"
+    },
+    {
+      "task_name": "Add Contact Form",
+      "status": "In Progress"
+    }
+  ],
+  "images": [
+    "https://example.com/images/homepage.png",
+    "https://example.com/images/projects.png"
+  ],
+  "documentation": "https://example.com/docs/portfolio",
+  "links": {
+    "live_site": "https://portfolio.example.com",
+    "github_repo": "https://github.com/hassan-rauf-butt/portfolio"
+  }
+}
+
+
+
+

@@ -1,6 +1,12 @@
 from sqlalchemy import  Table, Column, String
 from sqlalchemy import MetaData
 from sqlalchemy import Table, Column, String, Text, DateTime, MetaData, func,Date
+from sqlalchemy import (
+    Table, Column, MetaData, String, Integer, DateTime, JSON, Enum, ForeignKey, CheckConstraint
+)
+from sqlalchemy.dialects.postgresql import UUID, JSONB
+import uuid
+import enum
 
 
 metadata = MetaData()
@@ -40,13 +46,56 @@ experience_table = Table(
     Column("technologies", String),  # Comma-separated technologies
 )
 
+
+
+# Define enums for PostgreSQL
+class VisibilityEnum(enum.Enum):
+    PUBLIC = "public"
+    PRIVATE = "private"
+
 projects_table = Table(
     "projects",
     metadata,
-    Column("id", String, primary_key=True),  # Unique project ID
+    # Unique project ID
+    Column("id", Integer, primary_key=True, autoincrement=True),
+
+    # Basic project details
     Column("title", String, nullable=False),
-    Column("description", String, nullable=False),
-    Column("technologies", String),  # Comma-separated list of technologies
-    Column("github_link", String, nullable=False),
-    Column("live_demo_link", String),  # Optional demo link
+    Column("description", String, nullable=True),
+    Column("short_description", String, nullable=True),
+
+    # Category, status, priority, and visibility
+    Column("category", JSONB, nullable=True),  # Flexible JSON structure
+    Column("status", JSONB, nullable=True),  # JSONB for better indexing
+    Column("priority", JSONB, nullable=True),
+    # Column("visibility", Enum(VisibilityEnum), nullable=False, default=VisibilityEnum.PUBLIC),
+
+    # Dates
+    Column("start_date", DateTime, nullable=True),
+    Column("end_date", DateTime, nullable=True),
+    Column("last_updated", DateTime, nullable=False, server_default="now()"),
+
+    # Technical details
+    Column("technologies", JSONB, nullable=True),
+    Column("architecture", String, nullable=True),
+    Column("deployment", JSONB, nullable=True),
+    Column("repository", JSONB, nullable=True),
+
+    # Team and collaboration
+    Column("team", JSONB, nullable=True),
+    Column("collaborators", JSONB, nullable=True),
+
+    # Progress and metrics
+    Column("progress", Integer, CheckConstraint("progress >= 0 AND progress <= 100"), nullable=True),
+    Column("metrics", JSONB, nullable=True),
+    Column("milestones", JSONB, nullable=True),
+    Column("tasks", JSONB, nullable=True),
+
+    # Media and documentation
+    Column("images", JSONB, nullable=True),
+    Column("documentation", String, nullable=True),
+    Column("links", JSONB, nullable=True),
+
+    # Indexes for faster queries
+    CheckConstraint("end_date IS NULL OR end_date >= start_date", name="check_end_date"),
 )

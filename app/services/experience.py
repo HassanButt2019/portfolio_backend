@@ -27,6 +27,7 @@ class ExperienceDB:
     @staticmethod
     async def get_experience_by_id(exp_id: int) -> Experience:
         """Fetch a specific experience by ID."""
+        print("ID===== ",id)
         query = experience_table.select().where(experience_table.c.id == exp_id)
         row = await database.fetch_one(query)
         if row:
@@ -44,9 +45,7 @@ class ExperienceDB:
     @staticmethod
     async def create_experience(exp: Experience) -> Experience:
         """Add a new professional experience."""
-        exp_id = str(uuid.uuid4())  # Generate a unique ID
         query = experience_table.insert().values(
-            id=exp_id,
             title=exp.title,
             company=exp.company,
             start_date=exp.start_date,
@@ -57,7 +56,14 @@ class ExperienceDB:
         await database.execute(query)
 
         # Fetch the newly created record to ensure consistency
-        return await ExperienceDB.get_experience_by_id(exp_id)
+        return  Experience(
+                title=exp.title,
+                company=exp.company,
+                start_date=exp.start_date,
+                end_date=exp.end_date,
+                responsibilities=exp.responsibilities.split(",") if exp.responsibilities else [],
+                technologies=exp.technologies.split(",") if exp.technologies else [],
+            )
 
     @staticmethod
     async def update_experience(exp_id: str, exp: Experience) -> Experience:

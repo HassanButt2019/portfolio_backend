@@ -16,6 +16,7 @@ from alembic.config import Config
 from alembic import command
 from sqlalchemy import text
 from app.config import initialize_tables
+from fastapi.middleware.cors import CORSMiddleware
 
 
 app = FastAPI(title="Hassan Portfolio", version="1.0.0")
@@ -83,6 +84,14 @@ async def validation_exception_handler(request, exc):
         status_code=422,
         content={"detail": exc.errors()},
     )
+
+app.add_middleware(
+   CORSMiddleware,
+    allow_origins=["*"],  # Replace with your frontend's URL
+    allow_credentials=True,  # If your app uses cookies or credentials
+    allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allow all headers
+)
 # Include routes
 app.include_router(projects.router, prefix="/api/projects", tags=["Projects"])
 app.include_router(chatbot.router, prefix="/api", tags=["Chatbot"])

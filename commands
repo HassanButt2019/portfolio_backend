@@ -1,0 +1,4 @@
+alembic stamp head 
+alembic revision --autogenerate -m "New revision"
+alembic upgrade head
+alembic stamp head
