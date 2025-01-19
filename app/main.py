@@ -10,10 +10,6 @@ from fastapi.exceptions import RequestValidationError
 from app.routers import about
 from app.services.db import database
 from app.routers import experience
-from alembic.config import Config
-from alembic import command
-from alembic.config import Config
-from alembic import command
 from sqlalchemy import text
 from app.config import initialize_tables
 from fastapi.middleware.cors import CORSMiddleware
