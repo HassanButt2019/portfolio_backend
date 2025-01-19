@@ -8,7 +8,8 @@ services:
     depends_on:
       - db
     environment:
-      - DATABASE_URL=postgresql://postgress:l1zGQr2CCfLS5cHAsW2RJtw6qX2ZnzWN@dpg-cu1u8e8gph6c73eleuv0-a.oregon-postgres.render.com/portfolio_9h8r
+      - DATABASE_URL=postgresql+asyncpg://postgres_bpvc_user:NIg4ZheFFLoUjf1gjUimffVQBD3GLToL@dpg-cu64sg2j1k6c73f4ail0-a.oregon-postgres.render.com/postgres_bpvc
+      
       # - DATABASE_URL=postgresql+asyncpg://postgres:1234@db:5432/portfolio
 
     ports:
