@@ -86,3 +86,45 @@
 
 
 
+
+
+{
+  "id": 2,
+  "title": "Software Engineer",
+  "description": "Developed scalable backend systems and contributed to the successful delivery of multiple software solutions.",
+  "company": {
+    "id": 2,
+    "name": "Softstica",
+    "logo": "softstica_logo.png",
+    "industry": "Software Development",
+    "website": "https://www.softstica.com",
+    "size": "50-200",
+    "location": {
+      "city": "Karachi",
+      "country": "Pakistan",
+      "remote": false
+    }
+  },
+  "location": {
+    "city": "Karachi",
+    "country": "Pakistan",
+    "remote": false
+  },
+  "type": "full-time",
+  "current": false,
+  "start_date": "2022-08-01",
+  "end_date": "2023-01-31",
+  "responsibilities": [
+    "Designed and implemented RESTful APIs for client-facing applications.",
+    "Optimized database queries to improve performance and reduce latency.",
+    "Collaborated with cross-functional teams to deliver software solutions on time.",
+    "Integrated third-party services to enhance application functionality."
+  ],
+  "technologies": [
+    "Python",
+    "Django",
+    "PostgreSQL",
+    "Git",
+    "Docker"
+  ]
+}

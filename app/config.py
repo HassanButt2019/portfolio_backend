@@ -19,40 +19,59 @@ async def initialize_tables():
     async with database.connection() as conn:
         # List of table creation queries
         queries = [
+            # text("""
+            #     CREATE TABLE IF NOT EXISTS repo_languages (
+            #         id SERIAL PRIMARY KEY,  -- String-based primary key
+            #         repo_name VARCHAR(255),       -- Name
+            #         languages JSONB,                -- Languages
+            #         last_fetched  DATE            -- Comma-separated skills
+            #     );
+            # """),
+            # text("""
+            #     CREATE TABLE IF NOT EXISTS about_me (
+            #         id VARCHAR PRIMARY KEY,  -- String-based primary key
+            #         name VARCHAR(255),       -- Name
+            #         bio TEXT,                -- Biography
+            #         skills TEXT              -- Comma-separated skills
+            #     );
+            # """),
+            # text("""
+            #     CREATE TABLE IF NOT EXISTS contact (
+            #         id VARCHAR PRIMARY KEY,       -- String-based primary key
+            #         name VARCHAR(255)  ,   -- Sender's name
+            #         email VARCHAR(255)  ,  -- Sender's email
+            #         message TEXT  ,        -- Message content
+            #         linkedin VARCHAR(255),        -- LinkedIn profile URL
+            #         github VARCHAR(255),          -- GitHub profile URL
+            #         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP   -- Timestamp
+            #     );
+            # """),
+
+            # ==============================experience schema========================================
             text("""
-                CREATE TABLE IF NOT EXISTS about_me (
-                    id VARCHAR PRIMARY KEY,  -- String-based primary key
-                    name VARCHAR(255),       -- Name
-                    bio TEXT,                -- Biography
-                    skills TEXT              -- Comma-separated skills
-                );
+            CREATE TABLE IF NOT EXISTS experience (
+                id SERIAL PRIMARY KEY,                -- Auto-incremented ID
+                title VARCHAR(255) NOT NULL,          -- Job title
+                company JSONB NOT NULL,               -- Company details as JSON
+                type VARCHAR(50) CHECK (type IN ('full-time', 'part-time', 'freelance', 'contract', 'internship')), -- Employment type
+                location JSONB,                       -- Location details as JSON
+                start_date DATE NOT NULL,             -- Start date
+                end_date DATE,                        -- End date (nullable for ongoing jobs)
+                current BOOLEAN DEFAULT FALSE,        -- Is the job current?
+                description TEXT,                     -- Description of the role
+                responsibilities JSONB,               -- List of responsibilities as JSON
+                technologies JSONB,                   -- List of technologies as JSON
+                achievements JSONB,                   -- List of achievements as JSON
+                projects JSONB                        -- List of projects as JSON
+            );
             """),
-            text("""
-                CREATE TABLE IF NOT EXISTS contact (
-                    id VARCHAR PRIMARY KEY,       -- String-based primary key
-                    name VARCHAR(255) NOT NULL,   -- Sender's name
-                    email VARCHAR(255) NOT NULL,  -- Sender's email
-                    message TEXT NOT NULL,        -- Message content
-                    linkedin VARCHAR(255),        -- LinkedIn profile URL
-                    github VARCHAR(255),          -- GitHub profile URL
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL -- Timestamp
-                );
-            """),
-            text("""
-                CREATE TABLE IF NOT EXISTS experience (
-                    id VARCHAR PRIMARY KEY,       -- String-based primary key
-                    title VARCHAR(255) NOT NULL,  -- Job title
-                    company VARCHAR(255) NOT NULL,-- Company name
-                    start_date DATE NOT NULL,     -- Start date
-                    end_date DATE,                -- End date (nullable for ongoing jobs)
-                    responsibilities TEXT,        -- Comma-separated responsibilities
-                    technologies TEXT             -- Comma-separated technologies
-                );
-            """),
+
+
+            # ==============================project schema========================================
             text("""
     CREATE TABLE IF NOT EXISTS projects (
         id SERIAL PRIMARY KEY,                  -- Auto-incrementing primary key
-        title VARCHAR(255) NOT NULL,            -- Project title
+        title VARCHAR(255)  ,            -- Project title
         description TEXT,                       -- Project description
         short_description TEXT,                 -- Short project summary
         category JSONB,                         -- JSONB structure for category
@@ -84,6 +103,5 @@ async def initialize_tables():
         # Execute each query
         for query in queries:
             await conn.execute(query)
-        
-        print("Initiled tables")
 
+        print("Initiled tables")

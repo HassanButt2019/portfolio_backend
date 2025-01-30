@@ -807,3 +807,218 @@
 2025-01-19 01:27:02,161 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects/ process_time=0.00s
 2025-01-19 01:27:03,045 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=127.0.0.1
 2025-01-19 01:27:03,061 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects/ process_time=0.02s
+2025-01-19 02:50:58,518 - portfolio_logger - INFO - Application startup complete.
+2025-01-19 02:51:04,262 - portfolio_logger - INFO - Request: method=GET path=/ client=127.0.0.1
+2025-01-19 02:51:04,266 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/ process_time=0.00s
+2025-01-19 02:51:09,898 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-19 02:51:09,901 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-19 02:51:10,215 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-19 02:51:10,273 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.06s
+2025-01-19 02:52:39,088 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-19 02:52:39,090 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-19 02:52:39,469 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-19 02:52:39,470 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.00s
+2025-01-19 02:52:46,265 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-19 02:52:46,268 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-19 02:52:46,581 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-19 02:52:46,583 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.00s
+2025-01-19 02:52:53,523 - portfolio_logger - INFO - Application startup complete.
+2025-01-19 02:52:55,962 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-19 02:52:55,963 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-19 02:52:56,252 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-19 02:52:56,273 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.02s
+2025-01-19 02:53:05,293 - portfolio_logger - INFO - Request: method=GET path=/api/language/languages client=127.0.0.1
+2025-01-19 02:53:05,324 - portfolio_logger - INFO - Response: status_code=404 method=GET path=/api/language/languages process_time=0.03s
+2025-01-19 02:59:27,339 - portfolio_logger - INFO - Application startup complete.
+2025-01-19 02:59:33,390 - portfolio_logger - INFO - Request: method=GET path=/api/language/languages client=127.0.0.1
+2025-01-19 02:59:33,414 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/language/languages process_time=0.02s
+2025-01-19 03:02:24,598 - portfolio_logger - INFO - Application startup complete.
+2025-01-19 03:02:52,280 - portfolio_logger - INFO - Request: method=GET path=/api/language/languages client=127.0.0.1
+2025-01-19 03:02:52,294 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/language/languages process_time=0.02s
+2025-01-22 00:18:25,000 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 00:18:32,569 - portfolio_logger - INFO - Request: method=GET path=/ client=127.0.0.1
+2025-01-22 00:18:32,618 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/ process_time=0.05s
+2025-01-22 00:18:38,224 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-22 00:18:38,227 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-22 00:18:38,602 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-22 00:18:38,657 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.05s
+2025-01-22 00:18:44,727 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=127.0.0.1
+2025-01-22 00:18:45,334 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects/ process_time=0.61s
+2025-01-22 00:19:42,398 - portfolio_logger - INFO - Request: method=DELETE path=/api/projects/127906166 client=127.0.0.1
+2025-01-22 00:19:43,614 - portfolio_logger - INFO - Response: status_code=200 method=DELETE path=/api/projects/127906166 process_time=1.21s
+2025-01-22 00:51:43,313 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 00:51:45,074 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/experience/ process_time=1.76s
+2025-01-22 00:52:01,469 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 00:52:08,955 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 00:54:56,098 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 00:55:05,072 - portfolio_logger - INFO - Request: method=GET path=/health client=127.0.0.1
+2025-01-22 00:55:05,653 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/health process_time=0.58s
+2025-01-22 00:55:14,036 - portfolio_logger - INFO - Request: method=GET path=/api/projects/ client=127.0.0.1
+2025-01-22 00:55:14,649 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/projects/ process_time=0.61s
+2025-01-22 00:55:21,875 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 00:55:22,473 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/experience/ process_time=0.60s
+2025-01-22 01:02:52,278 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-22 01:02:52,417 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.15s
+2025-01-22 01:02:54,461 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-22 01:02:54,696 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.24s
+2025-01-22 01:03:08,442 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:03:10,137 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/experience/ process_time=1.70s
+2025-01-22 01:06:45,786 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:07:18,923 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:08:30,309 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:08:43,126 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:08:43,133 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.01s
+2025-01-22 01:10:28,798 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:10:28,821 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.03s
+2025-01-22 01:10:42,685 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:10:42,716 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.03s
+2025-01-22 01:11:34,181 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:11:34,211 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.03s
+2025-01-22 01:11:58,784 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:12:20,320 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:12:20,325 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.01s
+2025-01-22 01:12:31,075 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:14:30,522 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:15:22,039 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-22 01:15:22,043 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-22 01:15:22,971 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-22 01:15:23,019 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.05s
+2025-01-22 01:15:37,193 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:16:53,408 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:17:19,377 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:17:53,688 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:18:00,257 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:19:22,122 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:24:31,247 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:24:34,353 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-22 01:24:34,360 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.01s
+2025-01-22 01:24:35,574 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-22 01:24:35,818 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.25s
+2025-01-22 01:24:52,845 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:26:48,431 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-22 01:26:48,436 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.01s
+2025-01-22 01:26:49,038 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-22 01:26:49,042 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.00s
+2025-01-22 01:27:10,497 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-22 01:27:10,500 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-22 01:27:10,942 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-22 01:27:10,952 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.01s
+2025-01-22 01:27:25,472 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:27:54,401 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:34:09,403 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:34:27,955 - portfolio_logger - INFO - Request: method=GET path=/health client=127.0.0.1
+2025-01-22 01:34:28,518 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/health process_time=0.56s
+2025-01-22 01:34:35,120 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:34:35,747 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/experience/ process_time=0.63s
+2025-01-22 01:34:44,954 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 01:34:46,104 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/experience/ process_time=1.15s
+2025-01-22 01:36:15,462 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:36:57,741 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:38:00,336 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:39:10,139 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:40:55,727 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:41:50,867 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:42:24,103 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:43:18,234 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:43:55,405 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:44:01,012 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:44:57,814 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:45:16,891 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:45:23,537 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:45:36,225 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:46:29,810 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:46:45,995 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:46:57,430 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:47:04,719 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:47:06,339 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:47:25,933 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:47:25,940 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:47:50,428 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:47:50,436 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:48:08,773 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:48:14,526 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:48:14,538 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:48:46,736 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:48:49,964 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:48:57,322 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:48:58,117 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:49:14,131 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:49:17,125 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:49:24,721 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:49:54,238 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:50:07,334 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:50:07,342 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:50:57,428 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:51:00,418 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:51:17,724 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:51:24,629 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:51:36,824 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:51:44,536 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:51:48,393 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:52:09,043 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:52:11,380 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:52:28,844 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:52:29,674 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 01:53:20,323 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 01:53:21,503 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 02:11:00,437 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:14:33,927 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:15:11,744 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:15:29,913 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:15:37,215 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:15:57,060 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:16:04,424 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:16:12,029 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:16:16,941 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:16:20,803 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:16:48,499 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:20:56,918 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:21:17,180 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:21:34,914 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:22:24,549 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:22:29,620 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:22:43,261 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-22 02:22:43,265 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-22 02:22:44,384 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-22 02:22:44,459 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.08s
+2025-01-22 02:22:49,669 - portfolio_logger - INFO - Request: method=GET path=/health client=127.0.0.1
+2025-01-22 02:22:50,244 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/health process_time=0.58s
+2025-01-22 02:23:02,292 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 02:23:02,890 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/experience/ process_time=0.60s
+2025-01-22 02:23:55,740 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 02:25:09,601 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:25:13,634 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:25:19,809 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:25:24,456 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:25:24,468 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 02:26:28,940 - portfolio_logger - INFO - Application startup complete.
+2025-01-22 02:26:28,981 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 02:28:02,341 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 02:28:02,746 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/experience/ process_time=0.41s
+2025-01-22 02:28:10,824 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 02:28:11,420 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/experience/ process_time=0.60s
+2025-01-22 02:30:01,674 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 02:30:01,679 - portfolio_logger - INFO - Response: status_code=422 method=POST path=/api/experience/ process_time=0.01s
+2025-01-22 02:30:10,610 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 02:30:31,880 - portfolio_logger - INFO - Request: method=POST path=/api/experience/ client=127.0.0.1
+2025-01-22 02:30:32,275 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/experience/ process_time=0.40s
+2025-01-22 02:30:38,927 - portfolio_logger - INFO - Request: method=GET path=/api/experience/ client=127.0.0.1
+2025-01-22 02:30:39,368 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/api/experience/ process_time=0.44s
+2025-01-22 02:33:07,216 - portfolio_logger - INFO - Request: method=POST path=/api/projects/ client=127.0.0.1
+2025-01-22 02:33:08,467 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/projects/ process_time=1.25s
+2025-01-22 02:34:03,451 - portfolio_logger - INFO - Request: method=POST path=/api/projects/ client=127.0.0.1
+2025-01-22 02:34:28,426 - portfolio_logger - INFO - Request: method=POST path=/api/projects/ client=127.0.0.1
+2025-01-22 02:34:28,856 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/projects/ process_time=0.43s
+2025-01-30 15:33:57,081 - portfolio_logger - INFO - Application startup complete.
+2025-01-30 15:34:04,573 - portfolio_logger - INFO - Request: method=GET path=/ client=127.0.0.1
+2025-01-30 15:34:04,584 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/ process_time=0.01s
+2025-01-30 15:34:05,632 - portfolio_logger - INFO - Request: method=GET path=/favicon.ico client=127.0.0.1
+2025-01-30 15:34:05,632 - portfolio_logger - INFO - Response: status_code=404 method=GET path=/favicon.ico process_time=0.00s
+2025-01-30 15:34:11,552 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-01-30 15:34:11,554 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-01-30 15:34:11,939 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-01-30 15:34:12,030 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.09s
+2025-01-30 15:34:26,883 - portfolio_logger - INFO - Request: method=POST path=/api/chat client=127.0.0.1
+2025-01-30 15:34:44,256 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/chat process_time=17.37s
+2025-01-30 15:35:35,196 - portfolio_logger - INFO - Request: method=POST path=/api/chat client=127.0.0.1
+2025-01-30 15:35:53,352 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/chat process_time=18.15s

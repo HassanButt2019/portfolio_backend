@@ -1,11 +1,20 @@
 from fastapi import APIRouter, HTTPException
-from app.services.chatbot import get_chatbot_response
-
+from app.models.chatbot import ChatRequest
+from fastapi import FastAPI
+from pydantic import BaseModel
+from transformers import pipeline
 router = APIRouter()
 
-@router.post("/chatbot")
-def ask_chatbot(prompt: str):
-    response = get_chatbot_response(prompt)
-    if "Error" in response:
-        raise HTTPException(status_code=500, detail=response)
+
+
+# Load the model
+chatbot = pipeline("text2text-generation", model="google/flan-t5-large")
+
+
+@router.post("/chat")
+async def chat(request: ChatRequest):
+    response = chatbot(request.query, max_length=200, do_sample=True)[0]["generated_text"]
     return {"response": response}
+
+
+

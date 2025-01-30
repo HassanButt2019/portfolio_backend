@@ -13,8 +13,8 @@ from app.routers import experience
 from sqlalchemy import text
 from app.config import initialize_tables
 from fastapi.middleware.cors import CORSMiddleware
-
-
+from app.routers import languages
+from app.utils.fetch_language import fetch_repo_languages
 app = FastAPI(title="Hassan Portfolio", version="1.0.0")
 
 # @app.post("/apply-migrations")
@@ -46,6 +46,7 @@ async def startup_event():
     # Ensure the database connection is established first
     await database.connect()
     await initialize_tables()
+    # await fetch_repo_languages()
 
     logger.info("Application startup complete.")
 
@@ -94,6 +95,7 @@ app.include_router(chatbot.router, prefix="/api", tags=["Chatbot"])
 app.include_router(about.router, prefix="/api", tags=["About Me"])
 app.include_router(experience.router, prefix="/api/experience", tags=["Experience"])
 app.include_router(contact.router, prefix="/api/contact", tags=["Contact"])
+app.include_router(languages.router, prefix="/api/language", tags=["Language"])
 
 
 

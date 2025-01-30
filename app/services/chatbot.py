@@ -1,11 +1,9 @@
 from openai import OpenAI
-
-from dotenv import load_dotenv
+import openai
+from pinecone import Pinecone, ServerlessSpec
 import os
+from dotenv import load_dotenv
+from app.services.db import database
+from app.schemas.database_schema import projects_table
+from app.models.projects import Project
 
-load_dotenv()
-
-
-
-def get_chatbot_response(prompt: str) -> str:
-    pass

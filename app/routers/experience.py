@@ -22,13 +22,13 @@ async def create_experience(experience: Experience):
     """Create a new professional experience."""
     return await ExperienceDB.create_experience(experience)
 
-@router.put("/{exp_id}", response_model=Experience)
-async def update_experience(exp_id: int, experience: Experience):
-    """Update an existing professional experience."""
-    existing_experience = await ExperienceDB.get_experience_by_id(exp_id)
-    if not existing_experience:
-        raise HTTPException(status_code=404, detail="Experience not found")
-    return await ExperienceDB.update_experience(exp_id, experience)
+# @router.put("/{exp_id}", response_model=Experience)
+# async def update_experience(exp_id: int, experience: Experience):
+#     """Update an existing professional experience."""
+#     existing_experience = await ExperienceDB.get_experience_by_id(exp_id)
+#     if not existing_experience:
+#         raise HTTPException(status_code=404, detail="Experience not found")
+#     return await ExperienceDB.update_experience(exp_id, experience)
 
 @router.delete("/{exp_id}")
 async def delete_experience(exp_id: int):

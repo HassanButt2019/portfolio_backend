@@ -22,13 +22,13 @@ async def create_project(project: Project):
     """Create a new project."""
     return await ProjectsDB.create_project(project)
 
-@router.put("/{project_id}", response_model=Project)
-async def update_project(project_id: int, project: Project):
-    """Update an existing project."""
-    existing_project = await ProjectsDB.get_project_by_id(project_id)
-    if not existing_project:
-        raise HTTPException(status_code=404, detail="Project not found")
-    return await ProjectsDB.update_project(project_id, project)
+# @router.put("/{project_id}", response_model=Project)
+# async def update_project(project_id: int, project: Project):
+#     """Update an existing project."""
+#     existing_project = await ProjectsDB.get_project_by_id(project_id)
+#     if not existing_project:
+#         raise HTTPException(status_code=404, detail="Project not found")
+#     return await ProjectsDB.update_project(project_id, project)
 
 @router.delete("/{project_id}")
 async def delete_project(project_id: int):
