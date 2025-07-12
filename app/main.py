@@ -17,28 +17,6 @@ from app.routers import languages
 from app.utils.fetch_language import fetch_repo_languages
 app = FastAPI(title="Hassan Portfolio", version="1.0.0")
 
-# @app.post("/apply-migrations")
-# async def apply_migrations():
-#     """Manually apply Alembic migrations."""
-#     alembic_cfg = Config("alembic.ini")
-#     try:
-#         # Step 1: Generate migration revision
-#         migrations_path = "migrations/versions/"
-#         if not os.listdir(migrations_path):  # Check if the directory is empty
-#             print("Generating new migration revision...")
-#             command.revision(alembic_cfg, message="Create all tables", autogenerate=True)
-#             print("Migration revision created successfully.")
-#         else:
-#             print("Migration revisions already exist.")
-
-#         # Step 2: Apply migrations
-#         print("Applying migrations...")
-#         command.upgrade(alembic_cfg, "head")
-#         print("Migrations applied successfully.")
-#         return {"message": "Migrations generated and applied successfully."}
-#     except Exception as e:
-#         print(f"Migration error: {e}")
-#         return {"error": str(e)}
     
 @app.on_event("startup")
 async def startup_event():

@@ -10,9 +10,6 @@ COPY requirements.txt .
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the Alembic configuration and migrations directory
-# COPY alembic.ini .
-# COPY migrations/ migrations/
 
 # Copy the entire application code
 COPY . .
@@ -28,5 +25,5 @@ ENV PYTHONUNBUFFERED=1
 HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
   CMD curl -f http://localhost:8000/health || exit 1
 
-# Wait for database to be ready and run migrations before starting the app
+# Start the application
 CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port 8000"]
