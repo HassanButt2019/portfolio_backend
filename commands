@@ -1,16 +1,9 @@
-alembic stamp head 
-alembic revision --autogenerate -m "New revision"
-alembic upgrade head
-
-alembic stamp head
-
-
-// remove tables sfrom the docker 
+// remove tables from the docker database
 docker ps
 docker exec -it portfolio-db psql -U postgres -d portfolio
 \c portfolio;
 \dt;
-DROP TABLE IF EXISTS alembic_version;
+DROP TABLE IF EXISTS projects;
 \dt;
 \q
 docker-compose down && docker-compose up --build
