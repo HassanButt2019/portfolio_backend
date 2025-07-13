@@ -2,6 +2,7 @@ import asyncio
 import time
 from fastapi import FastAPI, Request
 from starlette.responses import Response
+from app.services.chatbot import ingest_resumes_from_pdfs
 from app.utils.logger import logger
 from app.routers import contact, projects
 from app.routers import chatbot
@@ -22,6 +23,7 @@ app = FastAPI(title="Hassan Portfolio", version="1.0.0")
 async def startup_event():
     """Application startup event."""
     # Ensure the database connection is established first
+    ingest_resumes_from_pdfs()
     await database.connect()
     await initialize_tables()
     # await fetch_repo_languages()
@@ -37,6 +39,7 @@ async def check_projects_table():
         return {"status": "healthy", "result": result}
     except Exception as e:
         return {"status": "unhealthy", "error": str(e)}
+    
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     # Log request details

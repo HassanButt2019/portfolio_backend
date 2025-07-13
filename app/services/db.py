@@ -9,7 +9,7 @@ load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Initialize the database
-database = Database(DATABASE_URL)
+database = Database("postgresql://postgres:1234@localhost:5432/postgres?sslmode=require")
 
 class AboutMeDB:
     @staticmethod
