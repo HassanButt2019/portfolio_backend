@@ -1410,3 +1410,21 @@
 2025-07-14 00:44:10,560 - portfolio_logger - INFO - Application startup complete.
 2025-07-14 00:44:16,624 - portfolio_logger - INFO - Application startup complete.
 2025-07-14 00:44:22,101 - portfolio_logger - INFO - Application startup complete.
+2025-07-15 00:44:12,847 - portfolio_logger - INFO - Application startup complete.
+2025-07-15 00:44:12,981 - portfolio_logger - INFO - Request: method=GET path=/ client=127.0.0.1
+2025-07-15 00:44:12,983 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/ process_time=0.00s
+2025-07-15 00:44:16,592 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-07-15 00:44:16,593 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-07-15 00:44:16,645 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-07-15 00:44:16,666 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.02s
+2025-07-15 00:44:49,582 - portfolio_logger - INFO - Application startup complete.
+2025-07-15 00:44:49,697 - portfolio_logger - INFO - Request: method=GET path=/docs client=127.0.0.1
+2025-07-15 00:44:49,698 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/docs process_time=0.00s
+2025-07-15 00:44:49,740 - portfolio_logger - INFO - Request: method=GET path=/openapi.json client=127.0.0.1
+2025-07-15 00:44:49,759 - portfolio_logger - INFO - Response: status_code=200 method=GET path=/openapi.json process_time=0.02s
+2025-07-15 00:45:11,949 - portfolio_logger - INFO - Request: method=POST path=/api/chat client=127.0.0.1
+2025-07-15 00:45:14,979 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/chat process_time=3.03s
+2025-07-15 00:45:28,218 - portfolio_logger - INFO - Request: method=POST path=/api/chat client=127.0.0.1
+2025-07-15 00:45:30,803 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/chat process_time=2.59s
+2025-07-15 00:45:50,472 - portfolio_logger - INFO - Request: method=POST path=/api/chat client=127.0.0.1
+2025-07-15 00:45:53,414 - portfolio_logger - INFO - Response: status_code=200 method=POST path=/api/chat process_time=2.94s
